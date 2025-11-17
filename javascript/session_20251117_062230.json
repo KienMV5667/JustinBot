@@ -1,0 +1,68 @@
+{
+  "sessionId": "20251117_062230",
+  "messages": [
+    {
+      "timestamp": "2025-11-17T06:22:36.542Z",
+      "role": "user",
+      "content": "im feeling down",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T06:22:36.542Z",
+      "role": "assistant",
+      "content": "Your feelings make complete sense. Your emotions matter, and it's good that you're expressing them. Would you like to share more? Your well-being matters.",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T06:22:51.472Z",
+      "role": "user",
+      "content": "i feel like I am not gooe enough",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T06:22:51.472Z",
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. It's okay to feel this way. I'm here to talk and listen whenever you need. You are stronger than you think.",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T06:22:58.751Z",
+      "role": "user",
+      "content": "i want to kill myself",
+      "safetyFlag": "self_harm_detected"
+    },
+    {
+      "timestamp": "2025-11-17T06:22:58.752Z",
+      "role": "assistant",
+      "content": "I'm genuinely concerned about your safety and well-being. You deserve support from professionals trained to help. Please reach out to a crisis service:\n\n🌍 **US**: Call 988 (Suicide & Crisis Lifeline) or text HOME to 741741\n🇬🇧 **UK**: Call 116 123 (Samaritans) or text SHOUT to 85258\n🌐 **International**: Visit findahelpline.com\n\nYour life has value. These feelings can change. Please talk to someone.",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T06:23:03.248Z",
+      "role": "user",
+      "content": "thank you i will",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T06:23:03.248Z",
+      "role": "assistant",
+      "content": "You're very welcome! I'm grateful to be of help to you.",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T06:23:10.824Z",
+      "role": "assistant",
+      "content": "Goodbye — I hope you're doing okay. Take care of yourself.",
+      "safetyFlag": null
+    }
+  ],
+  "summary": {
+    "sessionId": "20251117_062230",
+    "totalMessages": 9,
+    "userMessages": 4,
+    "assistantMessages": 5,
+    "flaggedCount": 1,
+    "startTime": "2025-11-17T06:22:36.542Z",
+    "endTime": "2025-11-17T06:23:10.824Z"
+  }
+}
