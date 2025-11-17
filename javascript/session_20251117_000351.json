@@ -1,0 +1,38 @@
+{
+  "sessionId": "20251117_000351",
+  "messages": [
+    {
+      "timestamp": "2025-11-17T00:03:51.510Z",
+      "role": "assistant",
+      "content": "Hi there — I'm JustinBot. How can I help you today?",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T00:03:51.513Z",
+      "role": "user",
+      "content": "I'm feeling sad",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T00:03:51.513Z",
+      "role": "assistant",
+      "content": "Your feelings make complete sense. What you're feeling is valid and important. These moments are part of being human. I'm here to listen and support you through this. Tell me more about what's on your mind? I'm here for you.",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T00:03:51.515Z",
+      "role": "assistant",
+      "content": "Goodbye — I hope you're doing okay. Take care of yourself.",
+      "safetyFlag": null
+    }
+  ],
+  "summary": {
+    "sessionId": "20251117_000351",
+    "totalMessages": 4,
+    "userMessages": 1,
+    "assistantMessages": 3,
+    "flaggedCount": 0,
+    "startTime": "2025-11-17T00:03:51.510Z",
+    "endTime": "2025-11-17T00:03:51.515Z"
+  }
+}
