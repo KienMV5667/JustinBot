@@ -88,6 +88,28 @@ class EmpathyAI {
   }
 
   processMessage(userMessage) {
+    // Check for greetings
+    const greetingPattern = /^(hi|hello|hey|hi there|hello there|hey there|greetings|good morning|good afternoon|good evening)[\s\.,!?]*$/i;
+    if (greetingPattern.test(userMessage.trim())) {
+      this.history.addMessage('user', userMessage, null);
+      const greetingResponses = [
+        "Hello! I'm JustinBot, and I'm here to support you. How are you feeling today?",
+        "Hi there! It's good to hear from you. What's on your mind?",
+        "Hey! I'm glad you're here. How can I help you today?",
+        "Hello! I'm here to listen and support you. What would you like to talk about?",
+        "Hi! Thanks for reaching out. How are things going for you?"
+      ];
+      const response = greetingResponses[Math.floor(Math.random() * greetingResponses.length)];
+      this.history.addMessage('assistant', response);
+      
+      return {
+        response,
+        isSafe: true,
+        modelUsed: 'greeting_response',
+        fromHistory: false
+      };
+    }
+
     // Check for "need to talk" messages
     const needToTalkPattern = /\b(i\s+need\s+to\s+talk|need\s+to\s+talk\s+to\s+you|i\s+need\s+someone\s+to\s+talk\s+to|can\s+i\s+talk\s+to\s+you)\b/i;
     if (needToTalkPattern.test(userMessage)) {
