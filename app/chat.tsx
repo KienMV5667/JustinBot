@@ -210,8 +210,10 @@ export default function ChatPage() {
         styles.messageText,
         item.sender === "user" ? styles.userMessageText : styles.botMessageText
       ]}>{item.text}</Text>
-      {item.flags && item.flags.length > 0 && (
-        <Text style={styles.flaggedText}>⚠️ Flagged: {item.flags.join(", ")}</Text>
+      {item.flags && (
+        <Text style={styles.flaggedText}>
+          ⚠️ Flagged: {Array.isArray(item.flags) ? item.flags.join(", ") : item.flags}
+        </Text>
       )}
     </View>
   );
