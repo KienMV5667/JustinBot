@@ -64,21 +64,21 @@ const styles = StyleSheet.create({
   },
   header: {
     alignItems: "center",
-    marginTop: 40,
-    marginBottom: 30,
+    marginTop: 20,
+    marginBottom: 20,
   },
   logo: {
-    width: 100,
-    height: 100,
-    marginBottom: 15,
+    width: 70,
+    height: 70,
+    marginBottom: 10,
   },
   title: {
-    fontSize: 32,
+    fontSize: 24,
     fontWeight: "bold",
     marginBottom: 5,
   },
   subtitle: {
-    fontSize: 16,
+    fontSize: 14,
     color: "#666",
     textAlign: "center",
   },
@@ -87,9 +87,9 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: "white",
-    padding: 20,
+    padding: 15,
     borderRadius: 12,
-    marginBottom: 15,
+    marginBottom: 12,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
@@ -97,16 +97,16 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   buttonIcon: {
-    fontSize: 32,
-    marginBottom: 10,
-  },
-  buttonText: {
-    fontSize: 20,
-    fontWeight: "bold",
+    fontSize: 24,
     marginBottom: 5,
   },
+  buttonText: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginBottom: 3,
+  },
   buttonSubtext: {
-    fontSize: 14,
+    fontSize: 13,
     color: "#666",
   },
 });

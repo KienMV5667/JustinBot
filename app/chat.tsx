@@ -15,7 +15,7 @@ import {
 } from "react-native";
 
 // Import the EmpathyAI system
-const EmpathyAI = require("../react-native/src/EmpathyAI").default;
+import EmpathyAI from "../components/EmpathyAI";
 
 export default function ChatPage() {
   const router = useRouter();
@@ -125,21 +125,21 @@ export default function ChatPage() {
     }
 
     try {
-      const response = await ai.processInput(messageText);
+      const result = await ai.processMessage(messageText);
 
       const botMessage = {
         id: (Date.now() + 1).toString(),
-        text: response.message,
+        text: result.response,
         sender: "bot",
         timestamp: new Date().toISOString(),
-        flags: response.flags,
+        flags: result.reason ? [result.reason] : null,
       };
 
       setMessages((prev) => [...prev, botMessage]);
       saveSession();
 
       // Handle flagged content
-      if (response.flags && response.flags.length > 0) {
+      if (!result.isSafe && result.reason) {
         setTimeout(() => {
           Alert.alert(
             "Content Notice",
