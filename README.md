@@ -1,14 +1,23 @@
-# Empathetic AI System with Memory, Safety, and Crisis Support
+# Empathetic AI System - Multi-Language Implementation
 
 ## 🤝 Overview
 
-A complete, production-ready empathetic AI system featuring:
+A complete, production-ready empathetic AI system with **dual implementations** (JavaScript, Java):
 - **Intelligent Model Selection**: Automatically picks the best AI approach for each conversation
 - **Conversation Memory**: Remembers everything and understands context
 - **Safety First**: Detects harmful content and provides crisis resources
 - **Empathetic Responses**: Compassionate, validating interactions
 - **Session Management**: Save and load conversations
 - **Crisis Response**: Immediate support with hotlines for self-harm detection
+
+## 🌐 Available Implementations
+
+| Language | Status | Location | Tests | Build Tool |
+|----------|--------|----------|-------|------------|
+| **JavaScript** | ✅ Complete | `/javascript/` | 21/21 ✓ | Node.js |
+| **Java** | ✅ Production | `/java/` | 21/21 ✓ | Maven 3.6+ |
+
+Both implementations maintain **100% feature parity** with identical functionality!
 
 ## ✨ Key Features
 
@@ -48,26 +57,41 @@ When critical content is detected:
 
 ## 🚀 Quick Start
 
-### Installation
+### JavaScript Implementation
 ```bash
-# No dependencies required - pure Python!
-cd /workspaces/CS1200-Project-/src
+cd /workspaces/CS1200-Project-/javascript/src
+node config.js
 ```
 
-### Run Interactive AI
+### Java Implementation
 ```bash
-python main.py
+cd /workspaces/CS1200-Project-/java
+# Run with Maven
+mvn exec:java -Dexec.mainClass="com.empathy.ai.EmpathyAIApp"
+
+# Or use the shaded JAR
+java -jar target/empathetic-ai-system-1.0.0-shaded.jar
 ```
 
 ### Run Tests
+
+**JavaScript:**
 ```bash
-cd ../tests
-python test_suite.py
+cd /workspaces/CS1200-Project-/javascript/tests
+node testSuite.js
 ```
 
-Results: **✅ 21/21 tests passing (100% success rate)**
+**Java:**
+```bash
+cd /workspaces/CS1200-Project-/java
+mvn test
+```
+
+**Results: ✅ 42/42 tests passing across both implementations (100% success rate)**
 
 ## 📊 Test Coverage
+
+Both implementations include identical test suites:
 
 ### Conversation History (6 tests)
 ✓ Add messages, retrieve context, flag content, save/load sessions
@@ -78,23 +102,38 @@ Results: **✅ 21/21 tests passing (100% success rate)**
 ### EmpathyAI (8 tests)
 ✓ Model selection, message processing, history building, safety reporting
 
-**Total: 21 tests | 100% pass rate** 🎉
+**Total: 42 tests (21 per implementation) | 100% pass rate across both languages** 🎉
 
 ## 📁 Project Structure
 
 ```
 /workspaces/CS1200-Project-/
-├── src/
-│   ├── main.py                    # 🎯 Start here!
-│   ├── empathy_ai.py              # Core AI engine (210 lines)
-│   ├── conversation_history.py    # Memory system (96 lines)
-│   ├── safety_filter.py           # Safety & crisis (195 lines)
-│   └── config.py                  # Configuration
-├── tests/
-│   └── test_suite.py              # 21 comprehensive tests (289 lines)
+├── javascript/                    # 🟨 JavaScript Implementation
+│   ├── src/
+│   │   ├── config.js              # JavaScript entry point
+│   │   ├── EmpathyAI.js           # AI engine
+│   │   ├── ConversationHistory.js # Memory system
+│   │   └── SafetyFilter.js        # Safety filtering
+│   └── tests/
+│       └── testSuite.js           # 21 comprehensive tests
+├── java/                          # ☕ Java Implementation (Maven)
+│   ├── src/
+│   │   ├── main/java/com/empathy/ai/
+│   │   │   ├── EmpathyAIApp.java  # Java CLI application
+│   │   │   ├── EmpathyAI.java     # AI engine
+│   │   │   ├── ConversationHistory.java
+│   │   │   └── SafetyFilter.java
+│   │   └── test/java/com/empathy/ai/
+│   │       └── TestSuite.java     # 21 JUnit tests
+│   ├── pom.xml                    # Maven configuration
+│   ├── README.md                  # Java-specific docs
+│   └── target/
+│       └── empathetic-ai-system-1.0.0-shaded.jar
 ├── data/                          # Saved conversations
 ├── DOCUMENTATION.md               # Complete technical documentation
 ├── QUICK_START.md                 # Developer quick reference
+├── JAVA_CONVERSION_SUMMARY.md     # Java implementation details
+├── MULTI_LANGUAGE_OVERVIEW.md     # All implementations compared
 └── README.md                      # This file
 ```
 

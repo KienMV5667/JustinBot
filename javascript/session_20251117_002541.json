@@ -1,0 +1,56 @@
+{
+  "sessionId": "20251117_002541",
+  "messages": [
+    {
+      "timestamp": "2025-11-17T00:25:45.097Z",
+      "role": "user",
+      "content": "i am feeling down",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T00:25:45.097Z",
+      "role": "assistant",
+      "content": "I appreciate your honesty. You deserve compassion and understanding. If you want to talk, I'm here for you. You've got this.",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T00:28:19.768Z",
+      "role": "user",
+      "content": "end'",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T00:28:19.769Z",
+      "role": "assistant",
+      "content": "Your feelings make complete sense. Your emotions matter, and it's good that you're expressing them. Would you like to share more? Take care of yourself, you matter.",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T00:28:22.733Z",
+      "role": "user",
+      "content": "end",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T00:28:22.733Z",
+      "role": "assistant",
+      "content": "I appreciate your honesty. Your emotions matter, and it's good that you're expressing them. Would you like to share more? Remember, you're not alone in this.",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T00:28:39.860Z",
+      "role": "assistant",
+      "content": "Goodbye — I hope you're doing okay. Take care of yourself.",
+      "safetyFlag": null
+    }
+  ],
+  "summary": {
+    "sessionId": "20251117_002541",
+    "totalMessages": 7,
+    "userMessages": 3,
+    "assistantMessages": 4,
+    "flaggedCount": 0,
+    "startTime": "2025-11-17T00:25:45.097Z",
+    "endTime": "2025-11-17T00:28:39.860Z"
+  }
+}

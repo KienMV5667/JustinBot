@@ -1,0 +1,50 @@
+{
+  "sessionId": "20251117_045433",
+  "messages": [
+    {
+      "timestamp": "2025-11-17T04:54:37.334Z",
+      "role": "assistant",
+      "content": "Hi there — I'm JustinBot. How can I help you today?",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T04:54:41.329Z",
+      "role": "user",
+      "content": "im feeling down",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T04:54:41.329Z",
+      "role": "assistant",
+      "content": "That sounds really challenging. It's okay to feel this way. I'm here to talk and listen whenever you need. Let's take this one step at a time.",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T04:57:17.085Z",
+      "role": "user",
+      "content": "i want to kill myself",
+      "safetyFlag": "self_harm_detected"
+    },
+    {
+      "timestamp": "2025-11-17T04:57:17.085Z",
+      "role": "assistant",
+      "content": "I'm genuinely concerned about your safety and well-being. You deserve support from professionals trained to help. Please reach out to a crisis service:\n\n🌍 **US**: Call 988 (Suicide & Crisis Lifeline) or text HOME to 741741\n🇬🇧 **UK**: Call 116 123 (Samaritans) or text SHOUT to 85258\n🌐 **International**: Visit findahelpline.com\n\nYour life has value. These feelings can change. Please talk to someone.",
+      "safetyFlag": null
+    },
+    {
+      "timestamp": "2025-11-17T04:58:48.736Z",
+      "role": "assistant",
+      "content": "Goodbye — I hope you're doing okay. Take care of yourself.",
+      "safetyFlag": null
+    }
+  ],
+  "summary": {
+    "sessionId": "20251117_045433",
+    "totalMessages": 6,
+    "userMessages": 2,
+    "assistantMessages": 4,
+    "flaggedCount": 1,
+    "startTime": "2025-11-17T04:54:37.334Z",
+    "endTime": "2025-11-17T04:58:48.736Z"
+  }
+}
