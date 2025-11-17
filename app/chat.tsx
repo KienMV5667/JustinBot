@@ -44,9 +44,22 @@ export default function ChatPage() {
       if (sessionData) {
         const parsed = JSON.parse(sessionData);
         if (parsed.messages && parsed.messages.length > 0) {
+          // Load into AI history
           parsed.messages.forEach((msg) => {
             ai.history.addMessage(msg.role, msg.content, msg.flags || null);
           });
+          
+          // Convert to UI messages for display
+          const uiMessages = parsed.messages.map((msg, index) => ({
+            id: `${Date.now()}_${index}`,
+            text: msg.content,
+            sender: msg.role === 'user' ? 'user' : 'bot',
+            timestamp: msg.timestamp,
+            flags: msg.flags,
+          }));
+          
+          // Add welcome message first, then history
+          setMessages((prev) => [...prev, ...uiMessages]);
         }
       }
     } catch (error) {
