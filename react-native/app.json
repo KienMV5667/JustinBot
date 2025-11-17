@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "JustinBot",
+    "slug": "justinbot-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.empathyai.justinbot"
+    },
+    "android": {
+      "package": "com.empathyai.justinbot"
+    }
+  }
+}

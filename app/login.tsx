@@ -23,14 +23,14 @@ export default function LoginPage() {
   console.log("Redirect URI:", request?.redirectUri);
 
   if(response?.type==="success") {
-    alert("Google Sign-In Successful");
+    router.replace("/chat");
     console.log(response.authentication);
   }
 
   async function handleLogin() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      alert("Logged in");
+      router.replace("/chat");
     } catch (err: any) {
       alert(err.message);
     }
