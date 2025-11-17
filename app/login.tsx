@@ -31,6 +31,7 @@ export default function LoginPage() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       alert("Logged in");
+      router.push("/dashboard");
     } catch (err: any) {
       alert(err.message);
     }

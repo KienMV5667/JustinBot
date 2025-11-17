@@ -59,8 +59,8 @@ export default function CalendarPage() {
       )}
 
       {/* Back Button */}
-      <TouchableOpacity style={styles.backButton} onPress={() => router.push('/')}>
-        <Text style={styles.backText}>← Back to Home</Text>
+      <TouchableOpacity style={styles.backButton} onPress={() => router.push('/dashboard')}>
+        <Text style={styles.backText}>← Back to Dashboard</Text>
       </TouchableOpacity>
     </View>
   );

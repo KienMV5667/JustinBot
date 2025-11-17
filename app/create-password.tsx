@@ -13,7 +13,7 @@ export default function CreatePasswordPage() {
     try {
       await createUserWithEmailAndPassword(auth, String(email), password);
       alert("Account created!");
-      router.push("/login");
+      router.push("/dashboard");
     } catch (err:any) {
       alert(err.message);
     }

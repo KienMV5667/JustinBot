@@ -15,8 +15,8 @@ export default function Settings() {
         <Switch value={notifications} onValueChange={setNotifications} />
       </View>
 
-      <TouchableOpacity style={styles.backButton} onPress={() => router.push('/')}>
-        <Text style={styles.backText}>← Back to Home</Text>
+      <TouchableOpacity style={styles.backButton} onPress={() => router.push('/dashboard')}>
+        <Text style={styles.backText}>← Back to Dashboard</Text>
       </TouchableOpacity>
     </View>
   );
