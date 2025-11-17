@@ -19,7 +19,7 @@ export default function CreateAccountPage() {
   console.log("Redirect URI:", request?.redirectUri);
 
   if(response?.type==="success") {
-    alert("Google Sign-In Successful!");
+    router.replace("/chat");
     console.log(response.authentication);
   }
 

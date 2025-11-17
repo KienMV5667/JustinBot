@@ -12,8 +12,7 @@ export default function CreatePasswordPage() {
   async function handleCreate() {
     try {
       await createUserWithEmailAndPassword(auth, String(email), password);
-      alert("Account created!");
-      router.push("/login");
+      router.replace("/chat");
     } catch (err:any) {
       alert(err.message);
     }
